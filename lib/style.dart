@@ -15,21 +15,21 @@ Color partColor2 = Color(0xffFF78A9);
 Color partColor3 = Color(0xffDA8AFF);
 
 TextStyle UserStyle = GoogleFonts.poppins(
-  fontWeight: FontWeight.w700,
-  fontSize: 40,
+  fontWeight: FontWeight.w500,
+  fontSize: 25,
   color: blackColor,
 );
 
 TextStyle TopicStyle = GoogleFonts.poppins(
   color: blackColor,
   fontWeight: FontWeight.w700,
-  fontSize: 30,
+  fontSize: 20,
 );
 
 TextStyle UserTopicStyle = GoogleFonts.poppins(
   color: blackColor,
-  fontWeight: FontWeight.w700,
-  fontSize: 20,
+  fontWeight: FontWeight.w100,
+  fontSize: 10,
 );
 
 TextStyle UserSubtitleStyle = GoogleFonts.poppins(

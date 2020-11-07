@@ -55,7 +55,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 60,
+                    height: 50,
                     width: _widht,
                     margin: EdgeInsets.only(
                       right: 30,
@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
                           style: GoogleFonts.poppins(
                             color: Colors.grey.withOpacity(0.8),
                             fontWeight: FontWeight.w500,
-                            fontSize: 25,
+                            fontSize: 21,
                           ),
                         ),
                         Spacer(),
@@ -102,7 +102,7 @@ class HomePage extends StatelessWidget {
                               isSelected: false,
                             ),
                             Chips(
-                              topic: "BackTracking",
+                              topic: "Data",
                               isSelected: false,
                             ),
                           ],
@@ -112,7 +112,7 @@ class HomePage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Chips(
-                              topic: "Linked Lists",
+                              topic: "Security",
                               isSelected: false,
                             ),
                             Chips(
@@ -148,7 +148,9 @@ class HomePage extends StatelessWidget {
                               Courses(course: courseList[0]),
                               SizedBox(height: 20,),
                               Courses(course: courseList[1]),
-                              SizedBox(height: 20,)
+                              SizedBox(height: 20,),
+                              Courses(course: courseList[0]),
+                              SizedBox(height: 20,),
                             ],
                           ),
                         )
@@ -190,25 +192,37 @@ class Courses extends StatelessWidget {
       child: Row(
         children: [
           Container(
-              height: _height * 0.17,
-              width: _height * 0.17,
+              height: _height * 0.12,
+              width: _height * 0.15,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage(course.courseAuthor),
+                    image: AssetImage(course.courseImage),
                     fit: BoxFit.cover,
                   ))),
           SizedBox(width: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              Container(
+                width: _widht * 0.5,
+                child: Text(
+                  course.courseName,
+                  maxLines: 2,
+                  style: GoogleFonts.poppins(
+                    color: blackColor,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
               Row(
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(100),
                     child: Image.asset(
                       course.authorImage,
-                      width: 40,
-                      height: 40,
+                      width: 30,
+                      height: 30,
                     ),
                   ),
                   SizedBox(width: 10),
@@ -217,24 +231,11 @@ class Courses extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.poppins(
                       color: Colors.black.withOpacity(0.5),
-                      fontSize: 18,
+                      fontSize: 10,
                       fontWeight: FontWeight.w500,
                     ),
                   )
                 ],
-              ),
-              SizedBox(height: 10),
-              Container(
-                width: _widht * 0.5,
-                child: Text(
-                  course.courseName,
-                  maxLines: 2,
-                  style: GoogleFonts.poppins(
-                    color: blackColor,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
               ),
             ],
           )

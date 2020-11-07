@@ -23,11 +23,11 @@ class Course {
 
 List<Course> courseList = [
   Course(
-      courseName: "Algorithms and Data Structures",
-      courseAuthor: "Michael Douglas",
-      authorImage: "../assets/speaker1.jpg",
+      courseName: "Coding and Testing",
+      courseAuthor: "Michael Dough",
+      authorImage: "assets/speaker1.jpg",
       courseTag: "Data Structures",
-      courseImage: "../assets/course1.png",
+      courseImage: "assets/course1.png",
       courseDetails:
       "lorem is tristique and non proident in hendrerit in lorem is tristique and non proident in hendrerit in lorem is tristique and non proident in hendrerit in",
       noOfLectures: "20(6 hours 30 minutes)",
@@ -37,7 +37,7 @@ List<Course> courseList = [
       courseAuthor: "Kenzie Madison",
       courseTag: "Flutter",
       authorImage: "assets/speaker2.png",
-      courseImage: "../assets/course2.png",
+      courseImage: "assets/course2.png",
       courseDetails:
       "lorem is tristique and non proident in hendrerit in lorem is tristique and non proident in hendrerit in lorem is tristique and non proident in hendrerit in",
       noOfLectures: "14(2 hours 14 minutes)",
