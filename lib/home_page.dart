@@ -10,23 +10,17 @@ import 'style.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double _widht = MediaQuery
-        .of(context)
-        .size
-        .width;
-    double _height = MediaQuery
-        .of(context)
-        .size
-        .height;
+    double _widht = MediaQuery.of(context).size.width;
+    double _height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Container(
         height: _height,
         width: _widht,
         decoration: BoxDecoration(
           gradient: new LinearGradient(colors: [
-            backgroundColor0,
-            backgroundColor1,
             backgroundColor2,
+            backgroundColor1,
+            backgroundColor0,
           ], begin: Alignment.topRight, end: Alignment.bottomLeft),
         ),
         child: BackdropFilter(
@@ -60,10 +54,10 @@ class HomePage extends StatelessWidget {
                     margin: EdgeInsets.only(
                       right: 30,
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 40),
+                    padding: EdgeInsets.symmetric(horizontal: 30),
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(30),
                     ),
                     child: Row(
                       children: [
@@ -86,7 +80,7 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Browse By Categories",
+                          "Filter",
                           style: TopicStyle,
                         ),
                         SizedBox(height: 20),
@@ -146,11 +140,13 @@ class HomePage extends StatelessWidget {
                             shrinkWrap: true,
                             children: [
                               Courses(course: courseList[0]),
-                              SizedBox(height: 20,),
+                              SizedBox(
+                                height: 20,
+                              ),
                               Courses(course: courseList[1]),
-                              SizedBox(height: 20,),
-                              Courses(course: courseList[0]),
-                              SizedBox(height: 20,),
+                              SizedBox(
+                                height: 20,
+                              ),
                             ],
                           ),
                         )
@@ -174,47 +170,33 @@ class Courses extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double _widht = MediaQuery
-        .of(context)
-        .size
-        .width;
-    double _height = MediaQuery
-        .of(context)
-        .size
-        .height;
+    double _widht = MediaQuery.of(context).size.width;
+    double _height = MediaQuery.of(context).size.height;
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(
-          builder: (ctx) => CourseDetails(),
-        )
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (ctx) => CourseDetails(
+                course:course,
+              ),
+            ),
         );
       },
       child: Row(
         children: [
           Container(
-              height: _height * 0.12,
+              height: _height * 0.15,
               width: _height * 0.15,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage(course.courseImage),
-                    fit: BoxFit.cover,
-                  ))),
+                image: AssetImage(course.courseImage),
+                fit: BoxFit.cover,
+              ))),
           SizedBox(width: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                width: _widht * 0.5,
-                child: Text(
-                  course.courseName,
-                  maxLines: 2,
-                  style: GoogleFonts.poppins(
-                    color: blackColor,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
               Row(
                 children: [
                   ClipRRect(
@@ -231,11 +213,23 @@ class Courses extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.poppins(
                       color: Colors.black.withOpacity(0.5),
-                      fontSize: 10,
+                      fontSize: 12,
                       fontWeight: FontWeight.w500,
                     ),
                   )
                 ],
+              ),
+              Container(
+                width: _widht * 0.5,
+                child: Text(
+                  course.courseName,
+                  maxLines: 2,
+                  style: GoogleFonts.poppins(
+                    color: blackColor,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
               ),
             ],
           )
@@ -269,10 +263,10 @@ class Chips extends StatelessWidget {
         topic,
         style: GoogleFonts.poppins(
           color: isSelected
-              ? Colors.purple.withOpacity(0.7)
+              ? Colors.purple.withOpacity(0.8)
               : Colors.black.withOpacity(0.5),
-          fontWeight: FontWeight.w500,
-          fontSize: 18,
+          fontWeight: FontWeight.w400,
+          fontSize: 17,
         ),
       ),
     );

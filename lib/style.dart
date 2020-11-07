@@ -22,14 +22,14 @@ TextStyle UserStyle = GoogleFonts.poppins(
 
 TextStyle TopicStyle = GoogleFonts.poppins(
   color: blackColor,
-  fontWeight: FontWeight.w700,
-  fontSize: 20,
+  fontWeight: FontWeight.w600,
+  fontSize: 19,
 );
 
 TextStyle UserTopicStyle = GoogleFonts.poppins(
   color: blackColor,
   fontWeight: FontWeight.w100,
-  fontSize: 10,
+  fontSize: 12,
 );
 
 TextStyle UserSubtitleStyle = GoogleFonts.poppins(
