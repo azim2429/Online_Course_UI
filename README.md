@@ -7,10 +7,10 @@ A clean and simple UI for Online Course App made with Flutter.
 ## Screenshots
 
 <p float="left">
-<img src="assets/SS-1.jpg" width="200" height="450" />
-<img src="assets/SS-2.jpg" width="200" height="450" />
-<img src="assets/SS-3.jpg" width="200" height="450" />
-<img src="assets/SS-4.jpg" width="200" height="450" />
+<img src="assets/SS-1.jpg" width="200" height="400" />
+<img src="assets/SS-2.jpg" width="200" height="400" />
+<img src="assets/SS-3.jpg" width="200" height="400" />
+<img src="assets/SS-4.jpg" width="200" height="400" />
 </p>
 
 # Command To Install
