@@ -46,4 +46,6 @@ Give a ⭐️ if this project helped you!
 
 ## Credits
 
-* Github: [KumarArab](https://github.com/KumarArab)
+* Github: [KumarArab](https://github.com/KumarArab)*
+* Dribble: [Ghani Pradita](https://dribbble.com/ghanipradita)
+
