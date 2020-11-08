@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:onlinecourse/course_details.dart';
+import 'package:onlinecourse/user_profile.dart';
 import 'course_model.dart';
 import 'style.dart';
 
@@ -41,12 +42,33 @@ class HomePage extends StatelessWidget {
                     FontAwesomeIcons.bars,
                     size: 30,
                   ),
-                  GestureDetector(
-                    onTap: () {},
-                    child: Text(
-                      "Abdul Azim",
-                      style: UserStyle,
-                    ),
+                  Row(
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(100),
+                        child: Image.asset(
+                          "assets/user.jpg",
+                          width: 40,
+                          height: 40,
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (ctx) => UserProfile(
+                              ),
+                            ),
+                          );
+                        },
+                        child: Text(
+                          "Jhon David",
+                          style: UserStyle,
+                        ),
+                      ),
+                    ],
                   ),
                   Container(
                     height: 50,

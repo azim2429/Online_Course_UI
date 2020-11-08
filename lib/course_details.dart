@@ -20,7 +20,7 @@ class CourseDetails extends StatelessWidget {
         child: Stack(
           children: [
             Container(
-              height: _height * 0.4,
+              height: _height * 0.35,
               width: _widht,
               decoration: BoxDecoration(
                   image: DecorationImage(

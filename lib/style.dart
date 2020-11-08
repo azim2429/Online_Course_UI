@@ -28,12 +28,12 @@ TextStyle TopicStyle = GoogleFonts.poppins(
 
 TextStyle UserTopicStyle = GoogleFonts.poppins(
   color: blackColor,
-  fontWeight: FontWeight.w100,
-  fontSize: 12,
+  fontWeight: FontWeight.w600,
+  fontSize: 20,
 );
 
 TextStyle UserSubtitleStyle = GoogleFonts.poppins(
-  fontSize: 18,
+  fontSize: 14,
   color: blackColor.withOpacity(0.5),
 );
 
