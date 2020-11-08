@@ -38,7 +38,7 @@ flutter run
 
 👨‍💻 **Abdul Azim**
 
-* Github: [@azim2429](https://github.com/azim2429)
+* Github: [Abdul Azim](https://github.com/azim2429)
 
 ## Show your support
 
@@ -46,6 +46,6 @@ Give a ⭐️ if this project helped you!
 
 ## Credits
 
-* Github: [KumarArab](https://github.com/KumarArab)
+* Github: [Arab Kumar](https://github.com/KumarArab)
 * Dribble: [Ghani Pradita](https://dribbble.com/ghanipradita)
 
